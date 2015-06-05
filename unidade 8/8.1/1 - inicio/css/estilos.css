@@ -1,0 +1,375 @@
+/*
+-- Estilos CSS - Website da Empresa
+*/
+
+/*
+-- Padrões e Reset
+*/
+
+* {margin: 0; padding: 0;}
+ul {list-style-type: none;}
+img, fieldset {border: 0;}
+h1, h2, h3, h4, h5, h6 {font-weight: normal;}
+
+/*
+-- Tipografia e Cores
+*/
+
+body {
+	color: #333;
+	background: #FFF url(../imagens/fundo_site.jpg);
+}
+
+body, input, select, textarea {
+	/* fonte: http://www.sitepoint.com/eight-definitive-font-stacks-2/ */
+	font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+}
+
+a:link {
+	color: #0F599F;
+}
+
+a:visited {
+	color: #666;
+}
+
+a:hover {
+	color: #000;
+	text-decoration: none;
+}
+
+a:focus {
+	outline: 1px dotted #F00;
+}
+
+a:active {
+	color: #F00;
+}
+
+p {
+	font-size: 16px;
+	margin-bottom: 1.5em;
+	line-height: 1.4em;
+}
+
+#conteudo-principal h1 {
+    font-size: 36px;
+    margin-bottom: 0.5em;
+}
+ 
+#conteudo-principal h2,
+#conteudo-secundario h1 {
+    font-size: 24px;
+    margin-bottom: 0.5em;
+}
+ 
+#conteudo-secundario p {
+    font-size: 14px;
+}
+ 
+#conteudo-principal ul,
+#conteudo-principal ol {
+    font-size: 16px;
+    margin-left: 1.5em;
+    margin-bottom: 1.5em;
+}
+ 
+#conteudo-principal ul {
+    list-style-type: square;
+}
+ 
+#conteudo-principal li {
+    margin-bottom: 0.3em;
+}
+
+/*
+-- Estrutura
+*/
+
+#cabecalho, #conteudo, #rodape {
+	width: 960px;
+	margin: 0 auto;
+}
+
+#cabecalho {
+	position: relative;
+}
+
+#logo {
+	padding: 10px 0;
+	display: block;
+	float: left;
+}
+
+#logo img {
+	display: block;
+}
+
+#menu-principal {
+	position: absolute;
+	top: 26px;
+	right: 0;
+}
+
+#menu-principal li {
+	display: inline;
+}
+
+#menu-principal a {
+	display: block;
+	float: left;
+	font-size: 18px;
+	text-decoration: none;
+	color: #333333;
+	margin-left: 32px;
+}
+
+#menu-principal a:hover, #menu-principal a.ativo {
+	color: #0f599f;
+}
+
+#menu-principal a.ativo {
+	font-weight: bold;
+}
+
+#foto-principal {
+	height: 200px;
+	background: #b6b6b6 url(../imagens/foto_principal.jpg) no-repeat center top;
+}
+
+#conteudo {
+	margin: 30px auto;
+}
+
+#conteudo-principal {
+	float: left;
+	width: 620px;
+}
+
+#conteudo-secundario {
+	float: right;
+	width: 280px;
+}
+
+#conteudo-secundario .interna {
+	padding: 20px;
+}
+
+#conteudo-secundario img {
+	display: block;
+}
+
+#rodape-fora {
+	background: #808080;
+}
+
+#telefone-email {
+	float: left;
+	font-size: 16px;
+	color: #FFF;
+	margin: 12px 0;
+}
+
+#telefone-email span.ddd {
+	font-size: 0.8em;
+}
+
+#endereco {
+	float: right;
+	text-align: right;
+	color: #FFF;
+	font-size: 14px;
+	margin: 12px 0;
+}
+
+#copyright {
+	font-size: 11px;
+	color: #d9d9d9;
+	clear: both;
+	display: block;
+	padding: 1em 0;
+}
+
+/*
+-- Estilos específicos de Seção
+*/
+
+#bd-empresa #foto-principal,
+#bd-servicos #foto-principal,
+#bd-contato #foto-principal
+{
+	height: 110px;
+}
+
+/* home */
+
+#bd-home #conteudo-secundario {
+	background: #0f599f;
+	color: #FFF;
+}
+
+#bd-home #conteudo-secundario a {
+	color: #FFF;
+}
+
+/* empresa */
+
+#bd-empresa .legenda {
+	margin: 0;
+	color: #FFF;
+	background: #808080;
+	font-style: italic;
+	text-align: center;
+	padding: 0.3em 0.6em;
+}
+
+/* servicos */
+
+.depoimento {
+	margin-bottom: 1em;
+}
+
+.depoimento blockquote {
+	font-size: 16px;
+	font-family: Georgia, serif;
+	font-style: italic;
+	line-height: 1.5em;
+	color: #666;
+	text-align: justify;
+	margin-bottom: 0.3em;
+}
+
+.depoimento blockquote p {
+	margin-bottom: 0.7em;
+}
+
+.depoimento .autor {
+	text-align: right;
+	font-size: 12px;
+}
+
+/*
+-- Formulários
+*/
+
+.campo {
+	margin-bottom: 0.75em;
+}
+
+.campo label {
+	display: block;
+	font-size: 1em;
+	margin-bottom: 0.1em;
+}
+
+.campo abbr {
+	color: #C00;
+	font-weight: bold;
+}
+
+.campo input, .campo textarea, .campo select {
+	width: 100%;
+	border: 1px solid #CCC;
+	font-size: 1em;
+	padding: 0.1em 0;
+}
+
+.campo textarea {
+	height: 10em;
+}
+
+label.checkbox {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+label.checkbox input {
+	display: inline;
+	vertical-align: baseline;
+	width: auto;
+}
+
+.submit {
+	font-size: 1em;
+	background: #0F599F;
+	font-weight: bold;
+	color: #FFF;
+	border: 0;
+	padding: 0.5em 1em;
+	margin-top: 1em;
+}
+
+.submit:hover {
+	background: #F90;
+}
+
+fieldset.grupo .campo {
+	float: left;
+	margin-right: 1em;
+}
+
+.campo.telefone {
+	width: 30%;
+}
+
+.campo.nome, .campo.empresa {
+	width: 48%;
+}
+
+fieldset.grupo .campo.empresa {
+	margin-right: 0;
+	float: right;
+}
+
+label, select, .submit {
+	cursor: pointer;
+}
+
+/*
+-- Tabelas
+*/
+
+.tabela-servicos {
+    border-spacing: 0;
+    width: 100%;
+}
+
+.tabela-servicos caption {
+	font-size: 24px;
+	margin-bottom: 0.5em;
+	text-align: left;
+}
+
+.tabela-servicos th {
+	background: #0F599F;
+	color: #FFF;
+	font-weight: normal;
+	text-align: center;
+}
+
+.tabela-servicos th, .tabela-servicos td {
+	border-bottom: 1px solid #CCC;
+	font-size: 14px;
+	padding: 0.3em;
+}
+
+.tabela-servicos .prazo-entrega {
+	text-align: center;
+}
+
+.tabela-servicos .valor-servico {
+	text-align: right;
+}
+
+/*
+-- Classes de Uso Geral
+*/
+
+.grupo:before, .grupo:after {
+	content: " ";
+	display: table;
+}
+
+.grupo:after { 
+    clear: both;
+}

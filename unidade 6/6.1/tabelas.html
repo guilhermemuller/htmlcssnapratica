@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<title>Tabelas HTML</title>
+	<style>
+		table {
+			border-collapse: collapse;
+			border: 1px solid #CCC;
+		}
+		
+		table td, table th {
+			border: 1px solid #CCC;
+			padding: 0.3em;
+		}
+	</style>
+</head>
+<body>
+	
+<table>
+	<tr>
+		<th scope="col">Categoria</th>
+		<th scope="col">Produto</th>
+		<th scope="col">Valor Un.</th>
+		<th scope="col">Quantidade</th>
+		<th scope="col">Subtotal</th>
+	</tr>
+	<tr>
+		<td rowspan="2">Eletrônicos</td>
+		<td>Produto X</td>
+		<td>R$10,00</td>
+		<td>2</td>
+		<td>R$20,00</td>
+	</tr>
+	<tr>
+		<td>Produto Y</td>
+		<td>R$20,00</td>
+		<td>4</td>
+		<td>R$80,00</td>
+	</tr>
+	<tr>
+		<th scope="row" colspan="4">Total</td>
+		<td>R$100,00</td>
+	</tr>
+</table>
+
+</body>
+</html>

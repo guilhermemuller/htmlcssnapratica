@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<title>Tabelas HTML</title>
+	<style>
+		.carrinho {
+			border-spacing: 0;
+			border-collapse: collapse;
+			width: 100%;
+			font-family: sans-serif;
+		}
+
+		.carrinho th, .carrinho td {
+			padding: 0.3em 0.6em;
+		}
+
+		.carrinho td {
+			border-bottom: 1px solid #CCC;
+		}
+
+		.carrinho th {
+			background: #333;
+			color: #FFF;
+			font-weight: normal;
+			font-size: 1.25em;
+		}
+
+		.carrinho .total th, .carrinho .total td {
+			background: #F90;
+			color: #FFF;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	
+<table class="carrinho">
+	<tr>
+		<th scope="col">Produto</th>
+		<th scope="col">Valor Un.</th>
+		<th scope="col">Quantidade</th>
+		<th scope="col">Subtotal</th>
+	</tr>
+	<tr>
+		<td>Produto X</td>
+		<td>R$10,00</td>
+		<td>2</td>
+		<td>R$20,00</td>
+	</tr>
+	<tr>
+		<td>Produto Y</td>
+		<td>R$20,00</td>
+		<td>4</td>
+		<td>R$80,00</td>
+	</tr>
+	<tr class="total">
+		<th scope="row" colspan="3">Total</td>
+		<td>R$100,00</td>
+	</tr>
+</table>
+
+</body>
+</html>

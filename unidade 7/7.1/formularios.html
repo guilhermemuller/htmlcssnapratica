@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulários</title>
+</head>
+<body>
+
+<h1>Formulários</h1>
+
+<form action="#" method="post">
+	<fieldset>
+		<legend>Dados Gerais</legend>
+		
+		<input type="text" name="nome" size="30" maxlength="30">
+		<br>
+		<input type="file" name="arquivo" size="30">
+	</fieldset>
+	<fieldset>
+		<legend>Dados de Endereço</legend>
+		
+		<input type="radio" name="radio"> Escolha 1
+		<input type="radio" name="radio" checked> Escolha 2
+		<input type="radio" name="radio"> Escolha 3
+		<br>
+		<input type="checkbox" name="checkbox"> Escolha 1
+		<input type="checkbox" name="checkbox" checked> Escolha 2
+		<input type="checkbox" name="checkbox"> Escolha 3		
+	</fieldset>
+
+	<input type="submit" value="Enviar">
+</form>
+
+<h2>Outros exemplos</h2>
+
+<select name="opcoes">
+	<option>Opção 1</option>
+	<option selected>Opção 2</option>
+	<option>Opção 3</option>
+</select>
+<br>
+<br>
+<textarea name="mensagem" rows="5" cols="50"></textarea>
+<br>
+<br>
+<select name="opcoes" multiple>
+	<option>Opção 1</option>
+	<option selected>Opção 2</option>
+	<option>Opção 3</option>
+</select>
+
+<label for="email">E-mail</label>
+<input type="text" name="email" id="email" size="50" maxlength="50">
+<br>
+<br>
+<input type="checkbox" name="teste"> Checkbox sem label englobando
+<br>
+<label><input type="checkbox" name="teste"> Checkbox englobado por label</label>
+
+</body>
+</html>

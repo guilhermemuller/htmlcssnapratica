@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<title>Exemplo - A Propriedade float</title>
+	<style>
+		body {
+			font-family: sans-serif;
+		}
+
+		.conteudo {
+			background: #0C0;
+		}
+
+		.conteudo-principal {
+			background: #CCF;
+			float: left;
+			width: 60%;
+		}
+
+		.sidebar {
+			background: #900;
+			color: #FFF;
+			float: right;
+			width: 35%;
+		}
+		
+		.grupo:before, .grupo:after {
+			content: " ";
+			display: table;
+		}
+
+		.grupo:after {
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	
+<div class="conteudo grupo">
+	<div class="conteudo-principal">
+		<h1>Conteúdo</h1>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac purus lacus, a suscipit leo. Phasellus porttitor sapien at elit semper auctor pretium quam sagittis.
+		</p>
+	</div>
+	<div class="sidebar">
+		<h1>Sidebar</h1>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac purus lacus, a suscipit leo. Phasellus porttitor sapien at elit semper auctor pretium quam sagittis.
+		</p>
+	</div>
+</div>
+<p>
+	Parágrafo exemplo para demonstrar como que um texto fora da div "conteudo" se comporta abaixo dos elementos flutuados.
+</p>
+
+</body>
+</html>

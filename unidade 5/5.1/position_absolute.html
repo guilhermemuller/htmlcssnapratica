@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<title>Exemplo - A Propriedade position</title>
+	<style>
+		.posicao2 {
+			position: absolute;
+			bottom: 0;
+			left: 20px;
+			background: #900;
+			color: #FFF;
+			padding: 20px;
+		}
+		
+		body {
+			height: 4000px;
+		}
+	</style>
+</head>
+<body>
+
+<div class="posicao2">
+	Div com position: absolute.
+</div>
+
+<p>
+	Este é um parágrafo normal que vem <strong>depois da div</strong> na ordem do código fonte. Perceba como a div com posicionamento absoluto é retirada do fluxo do documento e o espaço que seria ocupado por ela é desconsiderado.
+</p>
+<p>
+	Veja também que o posicionamento absoluto em relação à janela do navegador, como foi feito aqui, leva em consideração as coordenadas da área visível na tela original e não continua com a rolagem da página. Role esta página para baixo para ver como a div mantém sua posição <strong>sem descer junto com a rolagem</strong>.
+</p>
+
+</body>
+</html>

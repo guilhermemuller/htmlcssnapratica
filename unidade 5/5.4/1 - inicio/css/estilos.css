@@ -1,0 +1,190 @@
+/*
+-- Estilos CSS - Website da Empresa
+*/
+
+/*
+-- Padrões e Reset
+*/
+
+* {margin: 0; padding: 0;}
+ul {list-style-type: none;}
+img, fieldset {border: 0;}
+h1, h2, h3, h4, h5, h6 {font-weight: normal;}
+
+/*
+-- Tipografia e Cores
+*/
+
+body {
+	color: #333;
+	background: #FFF url(../imagens/fundo_site.jpg);
+}
+
+body, input, select, textarea {
+	/* fonte: http://www.sitepoint.com/eight-definitive-font-stacks-2/ */
+	font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+}
+
+a:link {
+	color: #0F599F;
+}
+
+a:visited {
+	color: #666;
+}
+
+a:hover {
+	color: #000;
+	text-decoration: none;
+}
+
+a:focus {
+	outline: 1px dotted #F00;
+}
+
+a:active {
+	color: #F00;
+}
+
+p {
+	font-size: 16px;
+	margin-bottom: 1.5em;
+	line-height: 1.4em;
+}
+
+#conteudo-principal h1 {
+    font-size: 36px;
+    margin-bottom: 0.5em;
+}
+ 
+#conteudo-principal h2,
+#conteudo-secundario h1 {
+    font-size: 24px;
+    margin-bottom: 0.5em;
+}
+ 
+#conteudo-secundario p {
+    font-size: 14px;
+}
+ 
+#conteudo-principal ul,
+#conteudo-principal ol {
+    font-size: 16px;
+    margin-left: 1.5em;
+    margin-bottom: 1.5em;
+}
+ 
+#conteudo-principal ul {
+    list-style-type: square;
+}
+ 
+#conteudo-principal li {
+    margin-bottom: 0.3em;
+}
+
+/*
+-- Estrutura
+*/
+
+#cabecalho, #conteudo, #rodape {
+	width: 960px;
+	margin: 0 auto;
+}
+
+#cabecalho {
+	position: relative;
+}
+
+#logo {
+	padding: 10px 0;
+	display: block;
+	float: left;
+}
+
+#logo img {
+	display: block;
+}
+
+#menu-principal {
+	position: absolute;
+	top: 26px;
+	right: 0;
+}
+
+#menu-principal li {
+	display: inline;
+}
+
+#menu-principal a {
+	display: block;
+	float: left;
+	font-size: 18px;
+	text-decoration: none;
+	color: #333333;
+	margin-left: 32px;
+}
+
+#menu-principal a:hover, #menu-principal a.ativo {
+	color: #0f599f;
+}
+
+#menu-principal a.ativo {
+	font-weight: bold;
+}
+
+#foto-principal {
+	height: 200px;
+	background: #b6b6b6 url(../imagens/foto_principal.jpg) no-repeat center top;
+}
+
+#conteudo-secundario {
+	width: 280px;
+}
+
+#conteudo-secundario img {
+	display: block;
+}
+
+#rodape-fora {
+	background: #808080;
+}
+
+/*
+-- Estilos específicos de Seção
+*/
+
+#bd-empresa #foto-principal {
+	height: 110px;
+}
+
+/* empresa */
+
+#bd-empresa .legenda {
+	margin: 0;
+	color: #FFF;
+	background: #808080;
+	font-style: italic;
+	text-align: center;
+	padding: 0.3em 0.6em;
+}
+
+/*
+-- Formulários
+*/
+
+/*
+-- Tabelas
+*/
+
+/*
+-- Classes de Uso Geral
+*/
+
+.grupo:before, .grupo:after {
+	content: " ";
+	display: table;
+}
+
+.grupo:after { 
+    clear: both;
+}
