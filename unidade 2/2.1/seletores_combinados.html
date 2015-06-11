@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<title>Exemplo - Sintaxe e Seletores CSS</title>
+	<style>
+		p.destaque {
+			color: gray;
+		}
+		
+		div#cabecalho h1 {
+			font-weight: normal;
+			color: green;
+		}
+		
+		#conteudo ul li a {
+			color: orange;
+		}
+		
+		#conteudo p.destaque strong {
+			color: red;
+		}
+		
+		.mensagem.destaque {
+			background: #FFC;
+			padding: 1em;
+		}
+		
+		p.destaque, h1, a.saiba-mais {
+			font-size: 20px;
+		}
+	</style>
+</head>
+<body>
+
+<p class="destaque">
+	Este é um parágrafo com a classe "destaque". Duas regras estão selecionando este elemento: <code>p.destaque</code> e <code>p.destaque, h1, a.saiba-mais</code>.
+</p>
+
+<div id="cabecalho">
+	<h1>
+		Esta é uma tag <code>h1</code> que está dentro de uma div com a id "cabecalho". Ela está sendo selecionada com o seletor <code>div#cabecalho h1</code>.
+	</h1>
+</div>
+
+<div id="conteudo">
+	<ul>
+		<li>
+			<a class="saiba-mais" href="#">
+				Este é um link com a classe "saiba-mais", que está dentro de uma tag <code>li</code>, que está dentro de <code>ul</code>, que está dentro de uma div com a id "conteudo". Este elemento está sendo selecionado pelos seletores <code>#conteudo ul li a</code> e <code>p.destaque, h1, a.saiba-mais</code>.
+			</a>
+		</li>
+	</ul>
+	
+	<p class="destaque">
+		<strong>Esta tag <code>strong</code> está dentro de um parágrafo com a classe "destaque". O seletor <code>#conteudo p.destaque strong</code> aplica algumas regras a esta tag, além do que já está aplicado ao parágrafo através de outros seletores.</strong>
+	</p>
+</div>
+
+<div class="mensagem destaque">
+	Esta é uma div que contém duas classes: "mensagem" e "destaque". O seletor <code>.mensagem.destaque</code> apenas seleciona elementos que contenham estas duas classes.
+</div>
+
+</body>
+</html>

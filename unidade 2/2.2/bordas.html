@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<title>Exemplo - Margens, Bordas e Box Model</title>
+	<style>
+		p.borda1 {
+			border-top: 3px solid #000;
+		}
+
+		p.borda2 {
+			/* a ordem dos lados é a mesma que com margens */
+			border-width: 2px 5px 3px 6px; /* aqui, cada lado possui uma borda de largura diferente */
+			border-style: dashed dotted; /* estilos de borda diferentes para cima-baixo e esquerda-direita */
+			border-color: #000 #090 #900 #009; /* uma cor de borda para cada lado */
+			padding: 20px;
+		}
+
+		p.borda3 {
+			border: 1px solid #000;
+		}
+	</style>
+</head>
+<body>
+
+<p class="borda1">
+	Parágrafo com borda no topo.
+</p>
+
+<p class="borda2">
+	Parágrafo com vários tipos e cores de bordas!
+</p>		
+
+<p class="borda3">
+	Parágrafo com borda uniforme.
+</p>
+
+</body>
+</html>
