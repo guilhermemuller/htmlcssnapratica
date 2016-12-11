@@ -232,11 +232,11 @@ p {
 -- Classes de Uso Geral
 */
 
-.grupo:before, .grupo:after {
+.grupo::before, .grupo::after {
 	content: " ";
 	display: table;
 }
 
-.grupo:after { 
+.grupo::after { 
     clear: both;
 }
